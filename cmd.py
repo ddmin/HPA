@@ -11,8 +11,9 @@ mode = input("W/D? >")
 if mode.lower() == 'd':
     start = 2
     while True:
-        if sheet.cell(1, start).value != '':
-            sheet.update_cell(1, start, '')
+        if sheet.cell(start, 1).value != '':
+            sheet.update_cell(start, 1, '')
+            start += 1
         else:
             quit()
 
