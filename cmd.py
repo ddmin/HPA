@@ -7,10 +7,20 @@ client = gspread.authorize(creds)
 
 sheet = client.open('CMD').sheet1
 
-with open('command.txt') as f:
-    code = f.read().split('\n')
+mode = input("W/D? >")
+if mode.lower() == 'd':
+    start = 2
+    while True:
+        if sheet.cell(1, start).value != '':
+            sheet.update_cell(1, start, '')
+        else:
+            quit()
 
-for i, command in enumerate(code, 3):
-    sheet.update_cell(i, 1, command)
+else:
+    with open('command.txt') as f:
+        code = f.read().split('\n')
 
-sheet.update_cell(2, 1, 'RUN')
+    for i, command in enumerate(code, 3):
+        sheet.update_cell(i, 1, command)
+
+    sheet.update_cell(2, 1, 'RUN')
