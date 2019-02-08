@@ -9,7 +9,7 @@ sheet = client.open('CMD').sheet1
 
 file_name = input("File Name: >")
 
-with open('command.txt') as f:
+with open(file_name) as f:
     code = f.read().split('\n')
 
 for i, command in enumerate(code, 3):
