@@ -6,6 +6,7 @@ A language based on the Google Sheet Cells and the Google Sheets API.
 
 # Commands
 | Command name | Usage |
+| ------------ | ----- |
 | CLOSE | Alt + F4 |
 | MOVE X Y | Move to coordinate X, Y |
 | CLICK | Click current position |
