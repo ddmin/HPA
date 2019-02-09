@@ -21,11 +21,19 @@ A language based on the Google Sheet Cells and the Google Sheets API.
 
 # Usage
 Example of ExceLang script
+
 (Note this language does not actually support inline comments)
 ```
-RUN     // Start script
-HOME    // Go to desktop home
-CLOSE   // Press Alt + F4 to open shutdown prompt
-ENTER   // Press OK to shutdown prompt
-EOF     // Terminate program
+RUN                     // Start script
+WIN                     // Open search bar
+TYPE NOTEPAD            // Look up Notepad program
+ENTER                   // Start Notepad program
+TYPE SHUT               // Type message into Notepad
+SPACE                   // Press spacebar
+TYPE DOWN               // Type message into Notepad
+WAIT 3                  // Wait for 3 seconds
+HOME                    // Go to Desktop home
+CLOSE                   // Press Alt + F4 to open shutdown prompt
+ENTER                   // Confirm shutdown
+EOF                     // Terminate program
 ```
