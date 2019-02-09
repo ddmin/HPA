@@ -1,6 +1,6 @@
 # HPA
 
-![Image](https://github.com/ddmin/HPA/blob/master/excelang.png)
+![Image](https://github.com/ddmin/HPA/blob/master/excelang.png = 500x300)
 
 # ExceLang
 A language based on the Google Sheet Cells and the Google Sheets API.
