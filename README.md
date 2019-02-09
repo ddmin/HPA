@@ -5,7 +5,7 @@
 A language based on the Google Sheet Cells and the Google Sheets API.
 
 # Commands
-| Command name | Usage |
+| Command name | Function |
 | ------------ | ----- |
 | RUN | Type into first cell to execute until EOF |
 | EOF | Signify end of file |
@@ -18,3 +18,14 @@ A language based on the Google Sheet Cells and the Google Sheets API.
 | WIN | Windows Key |
 | ENTER | Press Enter |
 | SPACE | Press Spacebar |
+
+# Usage
+Example of ExceLang script
+(Note this language does not actually support inline comments)
+```
+RUN     // Start script
+HOME    // Go to desktop home
+CLOSE   // Press Alt + F4 to open shutdown prompt
+ENTER   // Press OK to shutdown prompt
+EOF     // Terminate program
+```
