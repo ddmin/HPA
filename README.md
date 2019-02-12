@@ -12,11 +12,11 @@ A language based on the Google Sheet Cells and using a Google Sheets backend.
 | EOF | Signify end of file |
 | MOVE X Y | Move to coordinate X, Y |
 | CLICK | Click current position |
-| TYPE <word> | Type word |
-| WAIT <seconds> | Wait for certain amount of seconds |
+| TYPE (word) | Type word |
+| WAIT (seconds) | Wait for certain amount of seconds |
 | CLOSE | Alt + F4 |
 | HOME | Windows Key + D |
-| CTRL <key> | Ctrl + <key> |
+| CTRL (key) | Ctrl + <key> |
 | WIN | Windows Key |
 | ENTER | Press Enter |
 | SPACE | Press Spacebar |
