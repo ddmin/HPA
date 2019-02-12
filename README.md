@@ -3,7 +3,7 @@
 ![](https://github.com/ddmin/HPA/blob/master/excelang.png)
 
 # ExceLang
-A language based on the Google Sheet Cells and the Google Sheets API.
+A language based on the Google Sheet Cells and using a Google Sheets backend.
 
 # Commands
 | Command name | Function |
@@ -16,6 +16,7 @@ A language based on the Google Sheet Cells and the Google Sheets API.
 | WAIT <seconds> | Wait for certain amount of seconds |
 | CLOSE | Alt + F4 |
 | HOME | Windows Key + D |
+| CTRL <key> | Ctrl + <key> |
 | WIN | Windows Key |
 | ENTER | Press Enter |
 | SPACE | Press Spacebar |
@@ -28,13 +29,9 @@ Example of ExceLang script
 RUN                     // Start script
 WIN                     // Open search bar
 TYPE NOTEPAD            // Look up Notepad program
-ENTER                   // Start Notepad program
-TYPE SHUT               // Type message into Notepad
-SPACE                   // Press spacebar
-TYPE DOWN               // Type message into Notepad
-WAIT 3                  // Wait for 3 seconds
-HOME                    // Go to Desktop home
-CLOSE                   // Press Alt + F4 to open shutdown prompt
-ENTER                   // Confirm shutdown
-EOF                     // Terminate program
+ENTER                   // Press enter
+TYPE HELLO              // Type HELLO
+SPACE                   // Type Space
+TYPE WORLD              // Type WORLD
+EOF                     // Indicate end of file
 ```
