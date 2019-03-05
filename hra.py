@@ -20,7 +20,7 @@ sheet.update_cell(1, 1, CURRENT_COL + 1)
 
 while True:
     try:
-        time.sleep(1)
+        time.sleep(5)
         if sheet.cell(2, CURRENT_COL).value == 'RUN':
             sheet.update_cell(2, CURRENT_COL, '')
             celli = 3

