@@ -1,0 +1,13 @@
+WIN
+TYPE CHROME
+ENTER
+WAIT 1
+TYPE https://prnewser.files.wordpress.com/2007/11/061112_oprah2.jpg
+ENTER
+WAIT 1
+CTRL +
+CTRL +
+CTRL +
+CTRL +
+CTRL +
+EOF

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "herricksacquisition",
+  "private_key_id": "34370ead7c8cc524fe7913dd58cb93bf9212c3c3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDBNa1ryT51qL/E\nrn+WvBi668UtJrRzr3m2qX571s1b/hQ0zWTxtplERbq5KyAzZc/9/kGaT6hafvCp\n9PEhnxNej1lpdwfosMjXiUCavdf56RUApB4zTNS6j9VMVDJisCHPL03tJ5gQAVGM\nCr8XDfHELqaVTikxwsXLW1w632TMHKv8heUdCm4SsSgyUDdbG0Weblw/73uM4tzZ\nvAKIkg0+ferfTty0GZqAtndDVEHbFQ8xjrCguvCygMRmNVTiBxhq57Uf7a3neTSN\ngg7nZul/OOWbLxZ4FYK6Y4iJvVTZ+C5bjPclRsI85V3JjCKcTG+ttUDBOaER4Uda\nZ4V+UmRXAgMBAAECggEABT0101FMIWX5XUAwwYK7VkY9Ek5cYIeU7Ryj7vH1u5yk\nYrzThXe/Nt9jZl7mHNsgWrjTZT6yZG5Ci4BhEYQaiiIaTs2XRKUkyYNuKNJBCwSv\nOOOsK06dX+Rf6IeCnkIDiK9gXHcKKv+amV8bAaIlKppBPUAacPj9jWZXQMs1hoJz\nkcTvPUseWQebFA4d9gUAp91wrizSQNKhbaeXq2+w3ZxAX0vnmDBDsDaghwgwBtR0\nDdCEd2YLx3oGkfHIH1v9uMtr/9vVv5C1wIjjgigRQxqcS6cHxJj1R4kIKtDLXl0/\nQMDV63+HcmrJ5yrWclLw+jA5b1GQQ66VAd5VkKLHIQKBgQDldm80XZ2RAYTudYx4\ni5igPxee6KVLoPrST2nJm0Tkc0cdIC6C8Nj6Q5zCkykwlPp3Hho2p+ZrV9lMnq1L\nO21XMxM3FWtRBxnSg5DwD8C7+q4wiqhETv2UVSiAQIFzNSxwnyQlpUCzLvPdmtBx\n9ic7/zx9sFPt0xdmWpTo7aAKbwKBgQDXjexKDWtAJ6bhReRUzJYj2tv9tWF+h73Y\nXlFTzAFHh6r6TvLMGJ3lBxUucmj8esIteC2wgCKWrWa7nf4/ljGwI3c5GEQn83Mi\n/OquCqQuRwBHISRW52VzNMiZrK9KSLyXMYdTKiabXu6Kn/LvMXQl6eesf9XJSDz9\npjAarkpYmQKBgGSyTKrWSkdQO13KCBL+b8Qi6+K4hZFi269fWjU3BkyaqiKF9ONR\nfmaVNT3OBs1jE2citq41kFCbBKkzGSlisuEJcO1DYQz16McRJZGz2AimQbrbnmwb\nnfxyQovFwwkj1JS3wc0jb/kyKaKeRcs9Eoqpv4oIz0wWzrYEGkT9wrXRAoGAN6ny\nxvzIIX0b3zjJSgy7CO9PuCjK0H4FTIauwdEA05P5V0Jj+MiynZ5Cngf1jJ223z8V\nrWqpg/ere+/E5G7Izg+ajifyEc8QgIyHngIpe7niHHw2giqnTCTpWKX7bldyPCkS\nJSvRZHYTa8D6X0KKF/BbX3RzpNL+zRHJglpX4KECgYBkEvvUU8pgg6Ip6T0648SO\n+NmwZ+hCtfJr6DCGd9rRfoP4Uy8eKhKsJlUbBcinfNBKiteuHbHWjvnW2OgRfHOI\nzHQqziSZ1ULMErV4/VEa1L8COFsELQooSGcva15B+WfZFZBJy2R7U24xjMXkAnOT\nGw08G0RdaD4lSru7gagq8A==\n-----END PRIVATE KEY-----\n",
+  "client_email": "bdog2-641@herricksacquisition.iam.gserviceaccount.com",
+  "client_id": "112425464075766628131",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bdog2-641%40herricksacquisition.iam.gserviceaccount.com"
+}

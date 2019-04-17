@@ -1,0 +1,9 @@
+CTRL w
+WIN
+TYPE CHROME
+WAIT 1
+ENTER
+TYPE large-type.com/#i%20see%20you%20OwO
+WAIT 1
+ENTER
+EOF
