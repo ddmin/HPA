@@ -7,7 +7,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_name('.bdog.json', scope)
 client = gspread.authorize(creds)
 sheet = client.open('CMD').sheet1
 
-print()
+print(
 print('Cell- ExceLang Command Prompt v1.7')
 print('Type "help" for more information.')
 
