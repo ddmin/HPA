@@ -24,7 +24,7 @@ while True:
         cmd = ' '.join(splitted[2:])
 
         sheet.update_cell(3, int(comp), cmd)
-        sheet.update_cell(4, int(comp), "EOF") 
+        sheet.update_cell(4, int(comp), "EOF")
         sheet.update_cell(2, int(comp), "RUN")
 
     elif cmd.lower().startswith('ping'):
@@ -38,6 +38,13 @@ while True:
             print(f"CPU {comp}\n<Response 200>")
 
         print()
+
+    elif cmd.lower().startswith('reset'):
+        print()
+        sheet.update_cell(1, 1, '')
+        print('CMD sheet has been reset')
+        print()
+
     elif cmd.lower().startswith('howmany'):
         print()
         n = sheet.cell(1,1).value
@@ -48,6 +55,7 @@ while True:
         print(f'Number of computers: {number}')
 
         print()
+
     elif cmd.lower().startswith('post'):
         _, computer, content = cmd.split()
 
@@ -55,7 +63,7 @@ while True:
 
         file_name = os.path.join("src",content+".txt")
 
-        try:          
+        try:
             with open(file_name) as f:
                 code = f.read().split('\n')
 
@@ -77,17 +85,17 @@ while True:
     elif cmd.lower().startswith('help'):
         print()
         print('PING <CPU>')
-        
+
         print('POST <CPU> <FILENAME>')
-        
+
         print('WRITE <CPU> <CMD>')
         print('HOWMANY')
-        
+
         print('SCRIPTS')
-        
+
         print('EXIT')
         print()
-    
+
     else:
         print()
         print(f'{cmd} is not a valid command.')
