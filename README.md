@@ -1,6 +1,6 @@
 # HPA
 
-![](https://github.com/ddmin/HPA/blob/master/excelang.png)
+![excelang](./pics/excelang.png)
 
 # ExceLang
 A language based on the Google Sheet Cells and using a Google Sheets backend.
@@ -35,3 +35,5 @@ SPACE                   // Type Space
 TYPE WORLD              // Type WORLD
 EOF                     // Indicate end of file
 ```
+
+![cmd](./pics/cmd.png)
